@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		193159EA210795AA004CE459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193159E9210795AA004CE459 /* AppDelegate.swift */; };
-		193159EC210795AA004CE459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193159EB210795AA004CE459 /* ViewController.swift */; };
+		193159EC210795AA004CE459 /* MyHomework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193159EB210795AA004CE459 /* MyHomework.swift */; };
 		193159EF210795AA004CE459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193159ED210795AA004CE459 /* Main.storyboard */; };
 		193159F2210795AA004CE459 /* My_Homework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 193159F0210795AA004CE459 /* My_Homework.xcdatamodeld */; };
 		193159F4210795AC004CE459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 193159F3210795AC004CE459 /* Assets.xcassets */; };
 		193159F7210795AC004CE459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193159F5210795AC004CE459 /* LaunchScreen.storyboard */; };
+		193159FF210B9198004CE459 /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193159FE210B9198004CE459 /* SubjectCell.swift */; };
+		19315A01210B9451004CE459 /* PersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19315A00210B9451004CE459 /* PersistentService.swift */; };
+		19315A03210B95DC004CE459 /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19315A02210B95DC004CE459 /* TopicsViewController.swift */; };
+		19315A05210B98AE004CE459 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19315A04210B98AE004CE459 /* Homework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		193159E6210795AA004CE459 /* My Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		193159E9210795AA004CE459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		193159EB210795AA004CE459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		193159EB210795AA004CE459 /* MyHomework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomework.swift; sourceTree = "<group>"; };
 		193159EE210795AA004CE459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		193159F1210795AA004CE459 /* My_Homework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Homework.xcdatamodel; sourceTree = "<group>"; };
 		193159F3210795AC004CE459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		193159F6210795AC004CE459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		193159F8210795AC004CE459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		193159FE210B9198004CE459 /* SubjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCell.swift; sourceTree = "<group>"; };
+		19315A00210B9451004CE459 /* PersistentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentService.swift; sourceTree = "<group>"; };
+		19315A02210B95DC004CE459 /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
+		19315A04210B98AE004CE459 /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				193159E9210795AA004CE459 /* AppDelegate.swift */,
-				193159EB210795AA004CE459 /* ViewController.swift */,
+				193159EB210795AA004CE459 /* MyHomework.swift */,
+				19315A00210B9451004CE459 /* PersistentService.swift */,
+				193159FE210B9198004CE459 /* SubjectCell.swift */,
 				193159ED210795AA004CE459 /* Main.storyboard */,
+				19315A02210B95DC004CE459 /* TopicsViewController.swift */,
+				19315A04210B98AE004CE459 /* Homework.swift */,
 				193159F3210795AC004CE459 /* Assets.xcassets */,
 				193159F5210795AC004CE459 /* LaunchScreen.storyboard */,
 				193159F8210795AC004CE459 /* Info.plist */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				193159EC210795AA004CE459 /* ViewController.swift in Sources */,
+				193159FF210B9198004CE459 /* SubjectCell.swift in Sources */,
+				193159EC210795AA004CE459 /* MyHomework.swift in Sources */,
+				19315A03210B95DC004CE459 /* TopicsViewController.swift in Sources */,
+				19315A05210B98AE004CE459 /* Homework.swift in Sources */,
+				19315A01210B9451004CE459 /* PersistentService.swift in Sources */,
 				193159EA210795AA004CE459 /* AppDelegate.swift in Sources */,
 				193159F2210795AA004CE459 /* My_Homework.xcdatamodeld in Sources */,
 			);
