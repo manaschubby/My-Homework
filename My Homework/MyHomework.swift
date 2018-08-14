@@ -22,6 +22,7 @@ class MyHomework: UITableViewController {
         }catch{
             fatalError()
         }
+        print(subjects)
         tableView.reloadData()
         
     }
@@ -48,6 +49,12 @@ class MyHomework: UITableViewController {
     
     @IBAction func newSubject(sender : Any?)
     {
+        
+        addNewSubject()
+        
+        
+    }
+    func addNewSubject(){
         let alertController = UIAlertController(title: "New Subject", message: "Add A New Subject To Your Vast Homework List.", preferredStyle: .alert)
         var maintextField = UITextField()
         
@@ -59,14 +66,18 @@ class MyHomework: UITableViewController {
             let subject = Subject(context: self.context)
             if let text = maintextField.text{
                 subject.name = text
-                alertController.dismiss(animated: true, completion: {
-                    self.tableView.reloadData()
-                })
-
+                alertController.dismiss(animated: true, completion: nil)
+                self.subjects.append(subject)
+                PersistentService.saveContext()
+                self.tableView.reloadData()
             }
             
         }
-        alertController.addAction(action)
         
-    }}
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+}
+
 
