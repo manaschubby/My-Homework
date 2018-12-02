@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LP9-90-AoE">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LP9-90-AoE">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +16,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LP9-90-AoE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lLZ-RF-Vv5">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -32,19 +33,19 @@
             <objects>
                 <tableViewController id="r1S-gX-qdx" customClass="MyHomework" customModule="My_Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5aq-7f-y3f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="8YY-ap-MDS" customClass="SubjectCell" customModule="My_Homework" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8YY-ap-MDS" id="Mp5-cm-2Nv">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXb-QP-Jgu">
-                                            <rect key="frame" x="10" y="7" width="355" height="85"/>
+                                            <rect key="frame" x="10" y="7" width="394" height="85"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -88,15 +89,15 @@
             <objects>
                 <tableViewController id="uMF-eF-Gfq" customClass="TopicsViewController" customModule="My_Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="39l-nO-Vzy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homework" rowHeight="77" id="ch5-3V-ffg">
-                                <rect key="frame" x="0.0" y="28" width="375" height="77"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="topic" rowHeight="83" id="uT5-TH-UAC">
+                                <rect key="frame" x="0.0" y="28" width="414" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ch5-3V-ffg" id="rad-uN-EjH">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uT5-TH-UAC" id="Jk7-mM-UHu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="82.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -106,11 +107,111 @@
                             <outlet property="delegate" destination="uMF-eF-Gfq" id="CmE-GR-73x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="yza-se-yrh"/>
+                    <navigationItem key="navigationItem" id="yza-se-yrh">
+                        <barButtonItem key="leftBarButtonItem" title="⏚Back" id="czr-IM-gsp">
+                            <connections>
+                                <segue destination="7bj-i3-qBZ" kind="unwind" unwindAction="unwindToMyHomework:" id="sgH-WU-GLs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mOh-td-t4g">
+                            <connections>
+                                <action selector="addButtonPressedWithSender:" destination="uMF-eF-Gfq" id="N7c-La-U9c"/>
+                                <segue destination="eMg-OJ-BPW" kind="presentation" id="3TH-kE-9ZZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V64-wf-gz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7bj-i3-qBZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3042.4000000000001" y="130.88455772113943"/>
+            <point key="canvasLocation" x="3042.0289855072465" y="130.58035714285714"/>
+        </scene>
+        <!--New Homework-->
+        <scene sceneID="6Ph-rs-deu">
+            <objects>
+                <viewController title="New Homework" id="eMg-OJ-BPW" customClass="NewTopicViewController" customModule="My_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VpS-tJ-mtE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-Aa-IsD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem id="Oyw-Js-Ywh">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uwr-DW-XqD">
+                                            <connections>
+                                                <segue destination="Zsv-Ew-3S8" kind="unwind" unwindAction="unwindToTopicsView:" id="tyg-eh-Two"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eps-xq-mCa">
+                                            <connections>
+                                                <action selector="save:" destination="eMg-OJ-BPW" id="BWG-1G-iVV"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3A-Ij-IWG">
+                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Topic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-ro-SRf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="GJW-2f-8VQ"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Mex-ZU-EKa">
+                                        <rect key="frame" x="0.0" y="47" width="320" height="717"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1JZ-ap-5dm">
+                                                <rect key="frame" x="0.0" y="0.0" width="149.5" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0t9-6n-OOB">
+                                                <rect key="frame" x="0.0" y="32.5" width="320" height="684.5"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="555939580.99926901">
+                                                    <!--2018-08-14 11:39:40 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vfl-ro-SRf" firstAttribute="leading" secondItem="i3A-Ij-IWG" secondAttribute="leading" id="c1k-G4-RXv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vfl-ro-SRf" secondAttribute="trailing" id="lic-vu-OaV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i3A-Ij-IWG" firstAttribute="leading" secondItem="vTS-WS-26B" secondAttribute="leading" id="0PH-Ma-DIK"/>
+                            <constraint firstItem="dCK-Aa-IsD" firstAttribute="leading" secondItem="vTS-WS-26B" secondAttribute="leading" id="3Od-Qe-4d5"/>
+                            <constraint firstItem="i3A-Ij-IWG" firstAttribute="top" secondItem="dCK-Aa-IsD" secondAttribute="bottom" constant="10" id="700-y8-N8U"/>
+                            <constraint firstItem="dCK-Aa-IsD" firstAttribute="top" secondItem="vTS-WS-26B" secondAttribute="top" id="77r-ug-7yl"/>
+                            <constraint firstItem="vTS-WS-26B" firstAttribute="trailing" secondItem="i3A-Ij-IWG" secondAttribute="trailing" id="8Sv-9e-OZH"/>
+                            <constraint firstItem="i3A-Ij-IWG" firstAttribute="top" secondItem="dCK-Aa-IsD" secondAttribute="bottom" constant="10" id="gIn-I0-FoZ"/>
+                            <constraint firstItem="dCK-Aa-IsD" firstAttribute="trailing" secondItem="vTS-WS-26B" secondAttribute="trailing" id="jQI-3j-36F"/>
+                            <constraint firstItem="vTS-WS-26B" firstAttribute="bottom" secondItem="i3A-Ij-IWG" secondAttribute="bottom" id="zw3-Wp-Tsf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vTS-WS-26B"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PEr-Hi-A6C"/>
+                    <connections>
+                        <outlet property="reminderPicker" destination="0t9-6n-OOB" id="8eL-pJ-Xm0"/>
+                        <outlet property="saveButton" destination="eps-xq-mCa" id="Afh-0D-SMj"/>
+                        <outlet property="topicTextField" destination="Vfl-ro-SRf" id="pZC-K1-yel"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64e-OA-dok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Zsv-Ew-3S8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3828.90625" y="130.6640625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PST-NG-tnT">
@@ -118,7 +219,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s9q-O1-awL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="kJE-O3-9Ze">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

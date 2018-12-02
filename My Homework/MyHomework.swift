@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 import CoreData
 
 class MyHomework: UITableViewController {
@@ -37,12 +38,14 @@ class MyHomework: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? SubjectCell
+        cell?.delegate = self
         cell?.subjectLabel.text = subjects[indexPath.row].name!
         
         return cell!
         
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         performSegue(withIdentifier: "segue", sender: self)
     }
     
@@ -54,6 +57,7 @@ class MyHomework: UITableViewController {
         
         
     }
+    
     func addNewSubject(){
         let alertController = UIAlertController(title: "New Subject", message: "Add A New Subject To Your Vast Homework List.", preferredStyle: .alert)
         var maintextField = UITextField()
@@ -77,7 +81,49 @@ class MyHomework: UITableViewController {
         alertController.addAction(action)
         self.present(alertController, animated: true, completion: nil)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navVC = segue.destination as! UINavigationController
+        let destination = navVC.topViewController as! TopicsViewController
+ 
+        destination.selectedSubject = subjects[(tableView.indexPathForSelectedRow?.row)!]
+        
+        
+    }
+    @IBAction func unwindToMyHomework(_ unwindSegue: UIStoryboardSegue) {
+//        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
+        
+    }
 }
 
+
+extension MyHomework: SwipeTableViewCellDelegate
+{
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        let action = SwipeAction(style: .destructive, title: "Delete") { (action, indexpath) in
+            
+            //Getting Topics under deleted subject
+            let request : NSFetchRequest<Topic> = Topic.fetchRequest()
+            let predicate = NSPredicate(format: "subject.name MATCHES %@", self.subjects[indexPath.row].name!)
+            
+            request.predicate = predicate
+            
+            
+            let items = try! self.context.fetch(request)
+            for topic in items{
+                self.context.delete(topic)
+            }
+            
+            
+            self.context.delete(self.subjects[indexPath.row])
+            
+            self.subjects.remove(at: indexPath.row)
+            PersistentService.saveContext()
+            tableView.reloadData()
+        }
+        return [action]
+    }
+    
+    
+}
 
